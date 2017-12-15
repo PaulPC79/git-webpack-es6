@@ -1,0 +1,50 @@
+body {
+    max-width: 1920px;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+}
+
+#container-3d {
+    -webkit-perspective: 2000px;
+    perspective: 2000px;
+    width: 100vw;
+}
+
+#webpack-logo {
+    width: 35vw;
+    margin: 10vw 32.5vw;
+    &:hover {
+        animation: tiltPulse 1s infinite;
+    }
+}
+
+@-webkit-keyframes tiltPulse {
+    0% {
+        -webkit-transform: rotateZ(0) scale(1);
+        transform: rotateZ(0) scale(1);
+    }
+    50% {
+        -webkit-transform: rotateZ(5deg) scale(1.4);
+        transform: rotateZ(5deg) scale(1.4);
+    }
+    100% {
+        -webkit-transform: rotateZ(0) scale(1);
+        transform: rotateZ(0) scale(1);
+    }
+}
+
+@keyframes tiltPulse {
+    0% {
+        -webkit-transform: rotateZ(0) scale(1);
+        transform: rotateZ(0) scale(1);
+    }
+    50% {
+        -webkit-transform: rotateZ(5deg) scale(1.4);
+        transform: rotateZ(5deg) scale(1.4);
+    }
+    100% {
+        -webkit-transform: rotateZ(0) scale(1);
+        transform: rotateZ(0) scale(1);
+    }
+}
